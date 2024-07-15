@@ -4,7 +4,7 @@ A restaurant page made using HTML, CSS, Javascript, and Webpack. This is the sol
 
 <h2> Outcome </h2>
 
-<img src="" alt="The image of the solution to the challenge">
+<img src="https://i.imgur.com/yInx9ir.png" alt="The image of the solution to the challenge">
 
 <h2> Links </h2>
 
