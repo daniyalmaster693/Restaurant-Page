@@ -5,6 +5,7 @@
   --inter: "Inter", Arial, Helvetica, sans-serif;
   --nunito-sans: "Nunito Sans", Arial, Helvetica, sans-serif;
   --coffee: #bc9a6c;
+  --grey: #a0a0a0;
   --ease-in-out: all 0.3s ease-in-out;
   --scale-in-out: scale(1.05);
 }
@@ -15,6 +16,7 @@ body {
   min-height: 100vh;
   font-family: var(--inter);
   background-color: #1e1e1e;
+  animation: fadeIn 1.5s forwards ease;
 }
 
 .maincontainer {
@@ -37,7 +39,8 @@ body {
 }
 
 .left-side img {
-  width: 110px;
+  width: 100px;
+  height: 80px;
 }
 
 .navitem {
@@ -61,10 +64,12 @@ body {
 }
 
 .introduction-section {
-  display: grid;
-  place-items: center;
-  grid-template-columns: repeat(2, 800px);
-  grid-template-rows: repeat(1, 90vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  margin-right: 200px;
+  margin-bottom: 50px;
 }
 
 .intro-left-side {
@@ -88,7 +93,7 @@ body {
 }
 
 .coffee-description {
-  color: white;
+  color: var(--grey);
   font-size: 17px;
   font-weight: 300;
   width: 450px;
@@ -113,7 +118,7 @@ body {
 }
 
 .footer {
-  color: #a0a0a0;
+  color: var(--grey);
   font-family: var(--nunito-sans);
   font-size: 11px;
   text-align: center;
@@ -124,9 +129,70 @@ body {
 }
 
 .footer a {
-  color: #a0a0a0;
+  color: var(--grey);
 }
 
 .footer a:visited {
-  color: #a0a0a0;
+  color: var(--grey);
+}
+
+@keyframes fadeIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .intro-left-side {
+    margin-left: 300px;
+  }
+
+  .intro-right-side {
+    margin-left: 150px;
+  }
+
+  .intro-right-side img {
+    height: 500px;
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .intro-left-side {
+    margin-left: 200px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .introduction-section {
+    flex-direction: column;
+  }
+  .intro-left-side {
+    margin-top: 200px;
+    margin-bottom: 100px;
+  }
+
+  .footer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .right-side,
+  .left-side {
+    padding-left: 20px;
+    padding-right: -100px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .right-side,
+  .left-side {
+    padding-right: -250px;
+  }
 }
