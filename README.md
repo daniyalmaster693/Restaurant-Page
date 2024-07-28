@@ -9,16 +9,4 @@ A restaurant page made using HTML, CSS, Javascript, and Webpack. This is the sol
 <h2> Links </h2>
 
 <li> Link to task: https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page </li>
-<li> Link to live demo: https://restaurant-page-pink.vercel.app/ </li>
-
-<h2> What have I learned </h2>
-
-<li> </li>
-<li> </li>
-<li> </li>
-<li> </li>
-<li> </li>
-
-<h2> How did I complete this project? </h2>
-
-<p>  </p>
+<li> Link to live demo: https://odin-restaurant-page.vercel.app/ </li>
